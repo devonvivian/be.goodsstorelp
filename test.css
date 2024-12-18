@@ -1,0 +1,687 @@
+body {
+    background: linear-gradient(to right, rgba(255,246,239,1) 45%, rgba(255,224,190,1) 100%);
+    overflow-x: hidden;
+}
+.navbar {
+    background: linear-gradient(to right, rgba(255,246,239,1) 45%, rgba(255,224,190,1) 100%);
+}
+
+
+
+.logo {
+    color :#EEBC82 ;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Segoe UI;
+    margin-top:10px;
+    margin-left:100px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: black !important;
+    font-family: Segoe UI !important;
+    font-weight:500 !important;
+    margin-left:20px;
+    margin-right:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+     position: relative;
+    z-index: 10;
+}
+
+.nav-link:hover {
+    background-color: transparent !important;
+    color: #EEBC82 !important;
+    font-weight: 900 !important;
+    
+}
+.nav-link.active {
+    background-color: transparent !important;
+    color: #EEBC82 !important;
+    font-weight: 900 !important;
+    
+}
+
+.nav-link1 {
+    color: rgba(250, 225, 195, 0) !important; 
+}
+
+/*home*/
+/* Menyesuaikan ukuran font untuk layar kecil */
+@media (max-width: 767px) {
+    .text-responsive {
+        font-size: 2.0rem;
+        color:#3b250a;
+    }
+     .text-responsive1 {
+        font-size: 1.0rem; 
+    }
+     .text-responsive2 {
+        font-size: 0.75rem; 
+    }
+}
+
+/* Menyesuaikan ukuran font untuk layar sedang */
+@media (min-width: 768px) {
+    .text-responsive {
+        font-size: 2.5rem;
+        color:#3b250a;
+    }
+     .text-responsive1 {
+        font-size: 1.25rem; 
+    }
+    .text-responsive2 { 
+        font-size: 1.0rem;
+    }
+    
+}
+
+/* Menyesuaikan ukuran font untuk layar besar */
+@media (min-width: 992px) {
+    .text-responsive {
+        font-size: 2.75rem; 
+        color:#3b250a;
+    }
+     .text-responsive1 {
+        font-size: 1.5rem;
+    }
+    .text-responsive2 {
+        font-size: 1.0rem; 
+    }
+}
+/*logo gambar*/
+@media (max-width: 767px) {
+    .custom-image {
+        width: 200px; 
+        height: auto;
+    }
+}
+@media (min-width: 768px) {
+    .custom-image {
+        width: 250px; 
+        height: auto;
+    }
+}
+@media (min-width: 992px) {
+    .custom-image {
+        width: 350px; 
+        height: auto;
+    }
+}
+
+.custom-image {
+    animation: rubberBand 3s;
+}
+
+.custom-image:hover {
+    animation: rubberBand 2s infinite;
+}
+
+@keyframes rubberBand {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+        
+.welcome{
+  font-family: "Rowdies", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  color: #FBC27F ;
+
+}
+.store-name {
+   
+    color:#3b250a;
+    letter-spacing: 1px;
+    font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+}
+.desc{
+    font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.lead {
+    letter-spacing: 1px;
+}
+
+.btn-secondary {
+    background-color: #FBC27F;
+    border:0;
+    border-radius: 30px;
+    color: #3b250a;
+    padding: 8px 24px;
+}
+.btn-secondary:hover{
+    
+    background-color: #CEA261  ;
+}
+
+.card-body {
+    background-color: #FBC27F;
+    border-radius: 25px;
+            box-shadow: inset 5px 5px 25px rgba(2, 1, 2, 0.2);
+         
+}
+
+
+.card-img-top {
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.descr{
+    border-bottom: 2px solid #000; 
+    padding-bottom: 10px;
+     width: 100%; 
+    display: inline-block; 
+}
+.mirror1 {
+    width:360px;
+    animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+        }
+
+.act {
+    width: 240px;
+    height: 320px;
+}
+
+.py-custom {
+    padding-top:6rem;
+    padding-bottom:4rem;
+}
+
+    
+.logo1 {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Segoe UI;
+}
+
+
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;        
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #895A24;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #895A24;  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+@media (max-width: 768px) {
+  .card__header, .card__overlay {
+    padding: 1em;
+    gap: 1em;
+  }
+  
+  .card__thumb {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card__title {
+    font-size: 0.9em;
+  }
+
+  .card__description {
+    padding: 0 1.5em 1.5em;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 576px) {
+  .card__header, .card__overlay {
+    padding: 0.4em;
+    gap: 0.4em;
+  }
+  
+  .card__thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card__title {
+    font-size: 0.8em;
+  }
+
+  .card__description {
+    padding: 0 1em 1em;
+    font-size: 0.8em;
+  }
+}
+.carousel-caption{
+      background-color: rgba(255,224,190,0.6);
+       display: inline-block;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Menambahkan efek bayangan */
+        border-radius: 5px;
+}
+.card1-container {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 18rem;
+    min-width: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item .card1-front img {
+    width: 502px; /* Fixed width */
+    height: 235px; /* Fixed height */
+    object-fit: cover; /* Ensure image scales properly */
+}
+
+.card1{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+    
+
+.card-body1 {
+    background-color: #FBC27F;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:15px;
+     
+   
+}
+.card-body2 {
+    background-color: #FBC27F;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 150px;
+    padding:20px;
+    width : 380px;
+    height : 380px;
+   
+}
+
+.card1-front, .card1-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+}
+
+.card1-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.card1-back {
+    
+    transform: rotateY(180deg);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1-container:hover .card1 {
+    transform: rotateY(180deg);
+}
+
+.card-price {
+    font-weight: bold;
+    color: #FF5733;
+}
+
+.list-unstyled li a {
+            color: #000; 
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+        .list-unstyled li a i {
+            color: #527853; 
+            margin-right: 8px;
+            transition: color 0.3s ease;
+        }
+        .list-unstyled li a:hover {
+            font-weight: bold; 
+        }
+        .list-unstyled li a:hover i {
+            color: #133320; 
+            transform: scale(1.2); /* Perbesar ikon saat hover */
+        }
+        
+.card2 {
+     background-color: #FEEEDC;
+     box-shadow: inset 5px 5px 25px rgba(2, 1, 2, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding:20px;
+    width : 450px;
+    height : auto;
+}
+
+/*contact*/
+@media (max-width: 768px) {
+    .card-body3 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+
+/*testimoni*/
+
+
+.outerdiv
+{
+	width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv
+{
+	transform: scale(0.9);
+	margin: 1rem;
+	display: grid;
+	grid-gap: 1.5rem;
+	grid-template-rows: repeat(2,22rem);
+	grid-template-columns: repeat(4,17rem);
+}
+.eachdiv
+{
+	padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+}
+.eachdiv:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+
+.div1
+{
+	background: #e9a752;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+}
+.div2
+{
+	background:#ebae62;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.div3
+{
+	background: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+}
+.div4
+{
+	background: white;
+	grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+}
+.div5
+{
+	background: #b67017;
+	grid-column: 2/4;
+    grid-row: 2/3;
+}
+.userdetails
+{
+	display: flex;
+}
+.imgbox
+{
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width: 4rem;
+	border: 2px solid #cec5c5;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detbox .name
+{
+	color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark
+{
+	color: #49505A;
+}
+.detbox .designation
+{
+	color: #fff;
+    opacity: 50%;
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+}
+.detbox .designation.dark
+{
+	color: #49505A;
+}
+.review h4
+{
+	font-size: 1.1rem;
+	color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    justify-content: flex-start;
+}
+.review.dark h4{
+	color:#4B5258;
+    font-size: 1.1rem;
+}
+
+.attribution
+{
+	font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+.attribution a
+{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.innerdiv
+	{
+		transform: scale(0.7);
+	}
+}
+@media only screen and (max-width: 800px)
+{
+	.innerdiv
+	{
+		transform: scale(0.6);
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+	.attribution
+	{
+		position: relative;
+	}
+}
+.faqimg{
+     animation: tada 2s infinite;
+        }
+
+.custom-btn {
+    padding: 10px 20px; /* Adjust padding for normal screens */
+    font-size: 1rem; /* Adjust font size */
+}
+
+@media (max-width: 576px) {
+    .custom-btn {
+        padding: 5px 10px; /* Reduce padding for small screens */
+        font-size: 0.875rem; /* Reduce font size */
+    }
+}
